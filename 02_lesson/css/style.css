@@ -1,0 +1,37 @@
+/*Now there is another selector which is the universal selector. It selects everything*/
+/*now css full form is cascading style sheets so whichever is lower for elements of same priority it will be applied as its like a cascade ie top to bottom. Now specifity can override this cascading nature. Like classes are more specific than elements and ids are more specific than classes*/
+/*body element is parent to every other element out there
+properties relelated to font and typography are inherited but other such properties are not inherited. Example if we apply border property to the body element then it will be bordered along the body only. It wont be inherited by the other elements which are inside the body*/
+/*Now there is difference between the body and the * element selector. If we do border inside the * element selector then it will be applied to all the elements as its meant to select all the elements*/
+/*form elememts dont inheriet the font like properties and other such stuff*/
+/*!important after a property overrides everything else*/
+/*if we want things like button, form etc to inherit the font properties of body then we can simply do in the button tag
+font-family: inherit*/
+* {
+    font-family: monospace;
+}
+body {
+    font-size: 22px;
+}
+/*like this we can also select both h1 and h2*/
+/* h1,h2 looks for h1 and h2. h1 h2 looks for an h2 inside an h1*/
+/*span tag is also there to simply select the words in between*/
+h1, h2 {
+    color: blue;
+}
+p {
+    color: purple;
+}
+/*the below code simply means that we are looking for a span tag inside an p
+Now it will be much better here if we define a class here which does this and then we define the class inside the span element*/
+.highlight {
+    text-transform: uppercase;
+    background-color: gold;
+}
+.gray {
+    color: gray;
+}
+/*Its not really recommmended to use ids in css as they are more used in html and js. mainly we use classes and element selectors*/
+#second {
+    font-style: italic;
+}
