@@ -1,0 +1,14 @@
+body {
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background-color: papayawhip;
+}
+/*We can also put colours using the rgb values. The indexing stands for red green blue rgb(red,green,blue)*/
+/*We also have rgba where a stands for transparency which the fourth parameter. Its value is from 0-1. 1 means as if the a parameter is not even there while 0 means completely opaque*/
+/*now we can also understand the hex code values in colours
+    first two digits stand for red, next two for green and next two for blue. FF denotes complete red,green,blue
+    Hence #FFFFFF denotes black
+    #FF0000 denotes red
+    Now if the two digits are same then we can represent it by the single equal digit. Example #FF0000 can be written as #F00 as FF,00,00 forms pairs where both digits are same*/
+/*hsl stands for hue saturation and lightness*/
